@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -6,14 +6,13 @@ import Solo from './dev-pro';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const elementOneRoot = <h1>Hola primer elemento del root por fuera
+   del modo estricto</h1>
+   const elementTwo = <h1>COntiene segundo parametro</h1>
 root.render(
-    
-  <React.StrictMode>
-    <h1>Hola mundo react sexta  interaccion</h1>
-    
-    <App />
-    <Solo />
-  </React.StrictMode>
+
+  elementOneRoot
+
 );
 
 
