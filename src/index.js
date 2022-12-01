@@ -6,14 +6,31 @@ import Solo from './dev-pro';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const elementOneRoot = <h1>Hola primer elemento del root por fuera
-   del modo estricto</h1>
-   const elementTwo = <h1>COntiene segundo parametro</h1>
+function ticking(){
+  const elemenTime =(
+  <div>
+    <h1>Hello, world ¡</h1>
+    <h2>It is {
+      new Date().toLocaleTimeString()}</h2>
+  </div>
+  );
+
+
 root.render(
+  elemenTime
+  );
+}
+setInterval(ticking, 1000)
+  /**
+   * 
+  <React.StrictMode>
+    <h1>Hola tittle on StrictMode</h1>
+    <App />
+  <Solo />
+  </React.StrictMode>
+   */
 
-  elementOneRoot
 
-);
 
 
 
